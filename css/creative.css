@@ -1,0 +1,184 @@
+html { font-size: 625% }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; vertical-align: baseline; background: transparent }
+body { font-family:'futura-pt', 'source-han-sans-japanese', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック体", "Yu Gothic", YuGothic, "メイリオ", Meiryo, sans-serif; font-size: .16em; color:#1a1a1a; background: #fff; letter-spacing: .1em }
+ol , ul { list-style: none }
+a { text-decoration: none }
+span { display: block }
+.wrap { max-width: 1050px; width: 96%; margin: 0 auto }
+.bg_black { color: #fff }
+.bg_gray { background: #ccc; color: #fff; padding: 6em 0 }
+.relative { position: relative }
+.title { margin-bottom: 3em }
+.title h1 { font-family: 'Lato', sans-serif }
+.center { text-align: center }
+table { width: 100% }
+th , td { padding: 1.5em .5em .5em; text-align: left; vertical-align: top }
+th { width: 30% }
+td { width: 70% }
+input , textarea { width: calc(100% - 20px); font-size: .16rem; padding-left: 10px }
+input { height: 50px }
+textarea { height: 300px }
+#sub_page section { margin-bottom: 6em }
+#sub_page header .logo { margin-bottom: 3em }
+#sub_page header { padding: 0 }
+#sub_page .sub_menu .wrap { padding: 3em 0 }
+#sub_page .sub_menu { margin-bottom: 0 }
+#sub_page .title h1 { display: flex; align-items: center }
+#sub_page .title h1::after { border-top: 1px solid #999; content: ""; flex-grow: 1; margin-left: 1em }
+#sub_page .common .title h1::after { border: none }
+#sub_page .work , #sub_page .common { margin-bottom: 0 }
+h1 { font-size: .4rem }
+h2 { font-size: .2rem }
+li { font-size: .1rem }
+.noto { font-family: 'Noto Sans JP', sans-serif }
+.button { position: relative; display: inline-block; width: 250px; padding: 1.5em 0; background: #fff; border: 1px solid #1a1a1a; color: #1a1a1a; text-align: center; text-decoration: none; transition: .3s; font-size: .14rem; line-height: 1em }
+.button:hover { color: #fff; background: #1a1a1a; border: 1px solid #fff }
+.button::before { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: -1; content: ''; transform-origin: right top; transform: scale(0, 1); transition: transform .3s }
+.button:hover::before { transform-origin: left top; transform: scale(1, 1) }
+.button_black { background: #1a1a1a; border: 1px solid #1a1a1a; color: #fff }
+.button_black:hover { background: #fff; color: #1a1a1a; border: 1px solid #1a1a1a }
+.center { display: block; margin: 0 auto }
+.sp_btn , .sp_menu { display: none }
+header { background: rgba(255, 255, 255, .8); padding: .16rem 0 }
+header .logo { max-width: 200px; display: block; margin: 0 auto .5em }
+header ul { text-align: center }
+header li { display: inline-block; font-size: .14rem; font-family: "Noto Sans JP", sans-serif; width: 17% }
+header li a { color: #1a1a1a }
+header li a:hover { transition: .5s }
+footer { background: linear-gradient(0deg, #333 70%, #fff 30%) }
+footer.bg_black { position: relative }
+.common img { width: 90%; height: 310px }
+.common .wrap { position: absolute; left: 0; right: 0; top: .6rem; margin: auto; height: 160px }
+.left { width: 75%; display: inline-block; vertical-align: middle }
+.left p { width: 50% }
+.right { width: 24%; display: inline-block; vertical-align: middle }
+.right .button { display: block }
+.right .button:first-child { margin-bottom: 1em }
+.footer_nav { padding: 6em 0 2em }
+.footer_nav nav { margin-bottom: 3em }
+.footer_nav img { width: 30%; vertical-align: middle }
+.footer_nav ul { display: inline-block; width: 69%; text-align: right; vertical-align: middle }
+.footer_nav li { font-size: .14rem; display: inline-block; margin-left: 2em }
+.footer_nav a { color: #fff }
+.footer_nav .right { vertical-align: bottom; text-align: right }
+.footer_nav .right img { width: 15%; margin-bottom: 10px }
+#sub_page .footer_nav { margin-bottom: 0 }
+.top_main { background: url(../images/top_main.jpg) no-repeat center center/ cover; height: 100vh; color: #fff }
+.top_main_catch { filter: drop-shadow(1px 1px 1px black); position: absolute; height: 300px; top: 0; bottom: 0; left: 0; right: 0; margin: auto }
+.top_main span { font-size: .7rem; font-family: "Noto Sans JP", sans-serif; line-height: 1.2em; margin-bottom: .4em }
+.top_main p { font-size: .2rem }
+.top_main .logo_box { position: absolute; width: 7%; right: 5%; bottom: 5%; opacity: .4 }
+.top_company { height: 780px; background: linear-gradient(90deg, #fff 0%, #fff 50%, #f2f2f2 50%, #f2f2f2 100%) }
+.top_company .bg_black { background: #1a1a1a }
+.top_company img { position: absolute; top: 12em; right: 0; width: 45% }
+.top_company .bg_black { position: absolute; top: 6em; width: 65%; padding: 5% 0 }
+.top_company .wrap { width: 40% }
+.top_company h2 { margin-bottom: 1em }
+.top_company p { margin-bottom: 2em }
+.three_box { width: 30%; display: inline-block; vertical-align: top; margin-bottom: .3rem }
+.work { background: url(../images/bg_works.jpg) no-repeat center 10% /cover; padding: 6em 0 }
+.frame .three_box:nth-child(2) { margin: 0 4% }
+.three_box h2 { font-size: .18rem; margin-bottom: .1rem }
+.three_box span { font-size: .14rem; color: #666; display: flex; align-items: center; width: 40% }
+.three_box span::before { content: ""; border-top: 2px solid #ccc; flex-grow: 1; margin-right: 10px }
+.three_box img { width: 100% }
+.company .bg_gray .wrap { position: relative; height: 260px }
+.company .bg_gray img { position: absolute; height: 100px; right: 0; bottom: 0; opacity: .3 }
+.company h2 { margin-bottom: 2em }
+.bg_gray p { line-height: 2.5em }
+.company th { border-bottom: 1px solid #999 }
+.company td { border-bottom: 1px solid #ccc }
+.company .bg_gray { background: #666 }
+#sub_page .work .frame { margin-bottom: 3em }
+#sub_page .work .frame:last-child { margin-bottom: 0 }
+.service .three_box { border: 5px solid #ccc; text-align: center; width: calc(32% - 29px - 2em); padding: 2.5em 1em; vertical-align: top }
+.service .frame img { height: 50px; margin-bottom: 1.5em }
+.service .three_box span { font-size: .18rem; width: 100%; text-align: center; display: block; margin-bottom: 1.5em }
+.service .three_box span::before { border: none; content: none }
+.service .center img { width: 100%; margin-bottom: 3em }
+.service .center span { font-weight: bold; margin-bottom: 2em; font-size: .18rem }
+.service .center p , .service .three_box p { font-size: .14rem }
+.contact .wrap:nth-child(2) p { margin-bottom: 3em }
+form table { margin-bottom: 3em }
+form i { margin-right: 10px }
+.red { color: red; font-size: .12rem }
+@media screen and (max-width: 767px) {
+  .three_box { width: 90%; margin: 0 auto 4em; display: block }
+  .three_box img { width: 100% }
+  .frame .three_box:nth-child(2) { margin: 0 auto 4em }
+  .bg_gray { padding: 3em 0 }
+  #sub_page section { margin-bottom: 3em }
+  th, td { display: block; width: calc(100% - 1em) }
+  table tr:first-child th { padding-top: 0 }
+  h1 { font-size: .3rem }
+  h2 { font-size: .18rem }
+  .button { display: block; margin: 0 auto }
+  header { padding: .1rem 0 }
+  header .wrap { position: relative }
+  header .wrap ul { display: none }
+  header .logo { display: inline-block; margin-bottom: 0 }
+  #sub_page .sub_menu .wrap { padding: 1em .5em 0 }
+  #sub_page header .logo { margin-bottom: 0 }
+  #sub_page .sub_menu .wrap:nth-child(3) { padding-bottom: 0 }
+  .btn-trigger { width: 30px; height: 35px; cursor: pointer; position: absolute; right: 0 }
+  #sub_page .btn-trigger { right: 10px }
+  .btn-trigger span { position: absolute; left: 0px; width: 80%; height: 2px; background-color: #1a1a1a; border-radius: 4px }
+  .btn-trigger, .btn-trigger span { display: inline-block; transition: all .5s; box-sizing: border-box }
+  .btn-trigger span:nth-of-type(1) { top: 14px }
+  .btn-trigger span:nth-of-type(2) { top: 21px }
+  .btn-trigger span:nth-of-type(3) { bottom: 4px; margin-bottom: 0 }
+  #btn17::after { position: absolute; top: 145%; right: 4px; display: block; content: ''; width: 30px; height: 30px; margin: -45px 0 0 -45px; border-radius: 50%; transition: all .75s }
+  #btn17.active span:nth-of-type(1) { width: 60%; -webkit-transform: translateY(8px) rotate(45deg); transform: translateY(8px) rotate(45deg) }
+  #btn17.active span:nth-of-type(2) { left: 60%; opacity: 0; -webkit-animation: active-btn17-bar02 .8s forwards; animation: active-btn17-bar02 .8s forwards }
+  @-webkit-keyframes active-btn17-bar02 {
+    100% { height: 0 }
+  }
+  @keyframes active-btn17-bar02 {
+    100% { height: 0 }
+  }
+  #btn17.active span:nth-of-type(3) { width: 60%; -webkit-transform: translateY(-7px) rotate(-45deg); transform: translateY(-7px) rotate(-45deg) }
+  #btn17.active::after { border: 2px solid #1a1a1a }
+  .sp_btn.active { z-index: 100; position: fixed; right:10px; top:11px }
+  .btn-trigger span.active .nav_wrap { display: block; background: #000 }
+  .nav_wrap.active { display: block; animation: show 0.5s linear 0s; position: fixed; height: calc(100vh - 20px); width:calc(100% - 20px); top:0; left:0; z-index:99; border: 10px solid rgba(255, 255, 255, 1) }
+  .nav_wrap ul { background: #000; height: calc(50vh - 8em); z-index: 200; position: relative; padding: 4em 3em }
+  .nav_wrap ul li { display: block; width: 100%; text-align: left; margin-bottom: 3em }
+  .nav_wrap ul li a { color: #fff }
+  footer { background: linear-gradient(0deg, #333 90%, #fff 30%) }
+  footer.bg_black { height: 650px }
+  .left p { width: 100%; font-size: .14rem }
+  .left .title p { font-size: .16rem }
+  .left , .right { width: 100% }
+  .left { margin-bottom: 2em }
+  .footer_nav ul { display: none }
+  .common { height: 300px }
+  .common .wrap { height: 300px }
+  .common img { height: 130px }
+  .common .button { width: 42%; display: inline-block }
+  .right { text-align: left }
+  .right .button:first-child { margin-right: 10% }
+  .footer_nav img { width: 44% }
+  .footer_nav { font-size: .14rem; padding-bottom: 1em }
+  .footer_nav .right { text-align: center }
+  .footer_nav nav { margin-bottom: 1.5em }
+  .top_main { height: 70vh }
+  .top_main_catch { height: 160px }
+  .top_main span { font-size: .3rem }
+  .top_main p { font-size: .16rem }
+  .top_company { height: 740px }
+  .top_main .logo_box { width: 10% }
+  .top_company img { width: 100%; top: 6em }
+  .top_company .bg_black { width: 96%; left: 0; right: 0; top: 18em; margin: auto; padding: 7% 0 }
+  .top_company .wrap { width: 90% }
+  .top_company p { font-size: .14rem }
+  .company th { border: none }
+  .company td { padding-top: 0 }
+  .company .bg_gray p { line-height: 2em; letter-spacing: 0 }
+  .company .bg_gray .wrap { height: 350px }
+  .service .frame .three_box { width: calc(90% - 10px - 2em); margin: 0 auto 1em; display: block }
+  #sub_page.service section:nth-child(3) { margin-bottom: 0 }
+  .works .work { padding: 0 }
+  form td { padding-top: 0 }
+  .contact .wrap:nth-child(2) p { margin-bottom: 0 }
+  .contact .wrap p.center { margin-bottom: 3em }
+}

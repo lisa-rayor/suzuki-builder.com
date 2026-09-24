@@ -1,0 +1,76 @@
+{
+  "verifiedAt": "2026-09-24T06:49:54.461Z",
+  "pixelThreshold": 0.01,
+  "results": [
+    {
+      "page": "index",
+      "width": 1440,
+      "changedPixels": 0,
+      "layout": "identical",
+      "menu": "passed"
+    },
+    {
+      "page": "company",
+      "width": 1440,
+      "changedPixels": 0,
+      "layout": "identical",
+      "menu": "passed"
+    },
+    {
+      "page": "service",
+      "width": 1440,
+      "changedPixels": 0,
+      "layout": "identical",
+      "menu": "passed"
+    },
+    {
+      "page": "works",
+      "width": 1440,
+      "changedPixels": 0,
+      "layout": "identical",
+      "menu": "passed"
+    },
+    {
+      "page": "contact",
+      "width": 1440,
+      "changedPixels": 0,
+      "layout": "identical",
+      "menu": "passed"
+    },
+    {
+      "page": "index",
+      "width": 390,
+      "changedPixels": 0,
+      "layout": "identical",
+      "menu": "passed"
+    },
+    {
+      "page": "company",
+      "width": 390,
+      "changedPixels": 0,
+      "layout": "identical",
+      "menu": "passed"
+    },
+    {
+      "page": "service",
+      "width": 390,
+      "changedPixels": 0,
+      "layout": "identical",
+      "menu": "passed"
+    },
+    {
+      "page": "works",
+      "width": 390,
+      "changedPixels": 0,
+      "layout": "identical",
+      "menu": "passed"
+    },
+    {
+      "page": "contact",
+      "width": 390,
+      "changedPixels": 0,
+      "layout": "identical",
+      "menu": "passed"
+    }
+  ]
+}

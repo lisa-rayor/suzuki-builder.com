@@ -28,7 +28,7 @@ try {
     const catchBox = await page.locator('.top_main_catch').boundingBox();
     const seen = new Set([initial]);
     for (let i = 0; i < 3; i++) {
-      await page.clock.fastForward(5000);
+      await page.clock.fastForward(4000);
       seen.add(await active());
       assert.deepEqual(await page.locator('.top_main_catch').boundingBox(), catchBox);
     }

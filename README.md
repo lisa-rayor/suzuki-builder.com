@@ -23,7 +23,7 @@
 - `works-detail.php?id=1`：施工事例詳細の共通テンプレート。一覧順に数値ID `1`〜`7` を割り当て、各事例の詳細へ移動できます。
 - `includ/works-data.php`：事例ごとのタイトル・分類・所在地・Before／After画像・コメント。画像は `images/` 内のファイル名を指定します。現在の写真・コメントは仮内容で、実際の施工前後を示しません。
 - `css/creative.css`：元のルールと順序を維持し、プロパティごとに改行。ルール間には空行を入れています。
-- `products.php`：商品一覧と、発送・ご注文の案内。
+- `products.php`：商品一覧と、発送・ご注文の案内。`includ/product-grid.php` を2回読み込み、仮商品3点を2段（計6枠）表示します。
 - `product-detail.php?id=1`：商品詳細の共通テンプレート。数値ID `1`（スツール）・`2`（サイドテーブル）・`3`（シェルフ）の3商品を用意しています。
 - `includ/products-data.php`：商品名・商品番号・税込価格・画像ファイル名・説明・素材・サイズ。現在はすべて仮データです。
 - `includ/product-guide.php`：一覧・詳細で共通の発送案内と4段階の注文の流れ。電話相談後に総額・送料・納期・支払い条件を確認する案内です。
@@ -42,6 +42,8 @@
 
 商品ページの検証は `node scripts/verify-products.mjs`。1440px／768px／390pxで、3商品の一覧→詳細→一覧、価格・写真・発送案内・注文の流れ、メニュー、横はみ出し、不正IDの404を確認します。既存ページ比較では追加メニューと施工事例ボタンを除き、既存部分のデザインを照合します。
 
-トップの `.top_main` は既存写真3枚のスライドショーです。`index.php` の `.top-slideshow__slides` 内で写真を変更できます。`js/slideshow.js` の `interval` で切替間隔（現在5秒）、`css/creative.css` の `transition` でフェード時間（現在1.2秒）を設定します。操作ボタンは表示せず、非表示タブや「動きを減らす」設定では自動再生を停止します。JavaScriptが無効な場合は最初の写真を表示します。
+トップの `.top_main` は既存写真3枚のスライドショーです。`index.php` の `.top-slideshow__slides` 内で写真を変更できます。`js/slideshow.js` の `interval` で切替間隔（現在4秒）、`css/creative.css` の `transition` でフェード時間（現在4秒）を設定します。操作ボタンは表示せず、非表示タブや「動きを減らす」設定では自動再生を停止します。JavaScriptが無効な場合は最初の写真を表示します。
 
 スライドショーの検証は `node scripts/verify-slideshow.mjs`。PC・スマホで操作ボタンがないこと、3枚の循環、動きを減らす設定、文字位置の維持、メニュー操作、JavaScript無効時の表示を確認します。
+
+PHP互換性：テストサーバーはPHP 7.1.33、ローカルDockerはPHP 8.4です。追加ページのエスケープ処理はPHP 7.1でも動く無名関数を使用しています。`php scripts/verify-php-compatibility.php` で、一覧・全詳細・不正ID・HTMLエスケープを検証できます。PHP 7.1の環境では `fn` 構文を使用しないでください。

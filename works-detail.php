@@ -8,7 +8,9 @@ if (!$work) {
 }
 
 $pageTitle = ($work['title'] ?? '施工事例が見つかりません') . '　';
-$escape = static fn ($value) => htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+$escape = static function ($value) {
+  return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+};
 ?>
 <!DOCTYPE html>
 <html lang="ja">

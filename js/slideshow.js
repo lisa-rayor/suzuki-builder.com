@@ -4,7 +4,7 @@
 
   const images = [...hero.querySelectorAll('.top-slideshow__slides img')];
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const interval = 5000;
+  const interval = 4000;
   let current = 0;
   let timer;
 

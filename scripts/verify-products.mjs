@@ -35,16 +35,17 @@ try {
     await page.setViewportSize({ width, height: 900 });
     await page.goto(`${origin}/products.php`, { waitUntil: 'networkidle' });
     await ready();
-    assert.equal(await page.locator('.product-card').count(), 3);
+    assert.equal(await page.locator('.product-grid').count(), 2);
+    assert.equal(await page.locator('.product-card').count(), 6);
     assert.match(await page.locator('.product-notice').first().innerText(), /仮/);
     assert.match(await page.locator('#shipping').innerText(), /送料/);
     assert.equal(await page.locator('#order .product-order li').count(), 4);
     assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'List overflow');
     await page.screenshot({ path: path.join(out, `products-${width}.png`), fullPage: true });
 
-    for (const [id, name, price] of products) {
-      assert.equal(await page.locator(`.product-card__link[href="product-detail.php?id=${id}"]`).count(), 1);
-      await page.locator(`.product-card .product-button[href="product-detail.php?id=${id}"]`).click();
+    for (const [index, [id, name, price]] of [...products, ...products].entries()) {
+      assert.equal(await page.locator(`.product-card__link[href="product-detail.php?id=${id}"]`).count(), 2);
+      await page.locator(`.product-card .product-button[href="product-detail.php?id=${id}"]`).nth(Math.floor(index / products.length)).click();
       await page.waitForURL(`**/product-detail.php?id=${id}`);
       await ready();
       assert.equal(await page.locator('.product-detail__title').innerText(), name);
@@ -72,7 +73,7 @@ try {
       await page.locator('header > .wrap > ul .products a').hover();
       assert.equal(await page.locator('header > .wrap > ul .products a').innerText(), '商品一覧');
     }
-    console.log(`PASS ${width}px: 3 products, detail links, photos, prices, guides and navigation`);
+    console.log(`PASS ${width}px: 2 grids / 6 cards, detail links, photos, prices, guides and navigation`);
   }
   assert.deepEqual(errors, []);
 } finally {
